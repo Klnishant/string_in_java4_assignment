@@ -1,0 +1,20 @@
+Q1. what is mutable string in java explain with an example?
+Ans--> Once if we create a String, on that String if we try to perform any operation and if
+those changes get reflected in the same object then such strings are called
+“Mutable String”.
+
+Example: StringBuffer, StringBuilder
+
+Example:
+
+StringBuilder sb = new StringBuilder("Hello");
+
+// Append a string to the end of the current string
+sb.append(" World");
+
+// Convert the StringBuilder back to a String
+String result = sb.toString();
+
+System.out.println(result);
+
+This code will print "Hello World". As you can see, the append() method was used to add the string " World" to the end of the initial string "Hello". The toString() method was then used to convert the StringBuilder back to a String, which was stored in the result variable.
